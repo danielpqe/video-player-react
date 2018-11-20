@@ -21,12 +21,12 @@ module.exports = (env) => {
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: 'js/[name].[hash].js',
+            filename: 'js/[name].js',
             publicPath: path.resolve(__dirname, 'dist')+"/",
             chunkFilename: 'js/[id].[chunkhash].js',
         },
         devServer: {
-            port: 9000,
+            port: 3000,
         },
         module: {
             rules: [
