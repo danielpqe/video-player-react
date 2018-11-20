@@ -17,16 +17,16 @@ module.exports = (env) => {
     return {
 
         entry: {
-            "platzi-video": path.resolve(__dirname, 'index.js'),
+            'platzi-video': path.resolve(__dirname, 'index.js'),
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: 'js/[name].js',
+            filename: 'js/[name].[hash].js',
             publicPath: path.resolve(__dirname, 'dist')+"/",
-            chunkFilename: 'js/[id].[chunkhash].js',
+            chunkFilename: 'js/[id].[chunkhash].js'
         },
         devServer: {
-            port: 3000,
+            port: 9000,
         },
         module: {
             rules: [
