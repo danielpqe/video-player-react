@@ -9,7 +9,7 @@ function Playlist(props){
         return(
             <div className="Playlist">
                 {
-                    playlist.map((item)=>{
+                    props.playlist.map((item)=>{
                       return <Media {...item} key={item.id}/>
                     })
                 }
