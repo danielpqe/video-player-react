@@ -2,15 +2,12 @@ import React,{PureComponent} from 'react';
 import './media.css';
 import PropTypes from 'prop-types'
 class Media extends PureComponent{
-    state = {
-        author: 'Daniel PQE'
-    }
 
 // Un arrow function hereda el contexto del padre
     handleClick=(event)=>{
-        this.setState({
-            author: '@danielpqe'
-        })
+        // this.setState({
+        //     author: '@danielpqe'
+        // })
     }
     render() {
         return (
@@ -18,7 +15,7 @@ class Media extends PureComponent{
                 <div className="Media-cover">
                     <img className="Media-image" src={this.props.cover} alt="" width={240} height={160}/>
                     <h3 className="Media-title">{this.props.title}</h3>
-                    <p className="Media-author">{this.state.author}</p>
+                    <p className="Media-author">{this.props.author}</p>
                 </div>
             </div>
         );

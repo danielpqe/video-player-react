@@ -1,11 +1,12 @@
 import React from 'react';
+import './home-layout.css';
 
-function Homelayout(props){
+function HomeLayout(props){
     return (
-        <section>
+        <section className="HomeLayout">
             {props.children}
         </section>
     )
 }
 
-export default Homelayout
+export default HomeLayout
