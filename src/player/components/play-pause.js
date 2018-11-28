@@ -6,10 +6,14 @@ import Pause from '../../icons/components/pause';
 function PlayPause(props) {
     return (
         <div className="PlayPause">
-            <button>
+            <button
+                onClick={props.handleClick}
+            >
                 <Play size={25} color="white"/>
             </button>
-            <button>
+            <button
+                onClick={props.handleClick}
+            >
                 <Pause size={25} color="white"/>
             </button>
         </div>

@@ -11,7 +11,9 @@ class VideoPlayer extends Component{
                 <Title
                     title="Video chido!"
                 />
-                <PlayPause />
+                <PlayPause
+                    handleClick = {this.handleToggleClick}
+                />
                 <Video
                     autoplay={true}
                     src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
