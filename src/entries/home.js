@@ -5,6 +5,5 @@ import Home from '../pages/containers/home';
 // import data from '../api.json'
 import data from '../api.json'
 
-const app = document.getElementById('app')
-// render(<Media type="video" title="Bitcoin" author="@danielpqe" image="./images/covers/bitcoin.jpg"/>,app);
-render(<Home data={data}/>,app)
+const homeContainer = document.getElementById('home-container')
+render(<Home data={data}/>,homeContainer)

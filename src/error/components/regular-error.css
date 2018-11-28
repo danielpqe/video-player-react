@@ -1,0 +1,10 @@
+.Regular-error {
+    background: #c5e2ef;
+    position: fixed;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 25%;
+}
