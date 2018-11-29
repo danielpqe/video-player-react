@@ -1,29 +1,29 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './video.css';
 
-class Video extends Component{
-    togglePlay(){
-        if (this.props.pause){
+class Video extends Component {
+    togglePlay() {
+        if (this.props.pause) {
             this.video.play()
-        } else{
+        } else {
             this.video.pause()
         }
     }
-    componentWillReceiveProps(nextProps){
-        if (nextProps.pause !==this.props.pause){
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.pause !== this.props.pause) {
             this.togglePlay();
         }
     }
-    setRef = element =>{
-        this.video=element;
+    setRef = element => {
+        this.video = element;
     }
-    render(){
+    render() {
         const {
             handleLoadedMetadata,
             handleTimeUpdate,
-            handleSekking,
-            handleSekked
-        }=this.props;
+            handleSeeking,
+            handleSeeked,
+        } = this.props;
 
         return (
             <div className="Video">
@@ -33,11 +33,11 @@ class Video extends Component{
                     ref={this.setRef}
                     onLoadedMetadata={handleLoadedMetadata}
                     onTimeUpdate={handleTimeUpdate}
-                    onSekking={handleSekking}
-                    onSekked={handleSekked}
+                    onSeeking={handleSeeking}
+                    onSeeked={handleSeeked}
                 />
             </div>
-            )
+        )
     }
 }
 
